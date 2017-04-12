@@ -20,7 +20,8 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
-        <VideoList videos = {this.state.videos}/>
+        <VideoList videos = {this.state.videos
+        }/>
       </div>//JSX (a subset of JS that allows us to write JS that looks like HTML)
     );
   }
