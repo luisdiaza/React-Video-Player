@@ -2,4 +2,4 @@ This is an application I built (originally cloned from a boilerplate project pro
 
 I am also becoming familiar with the toolchain supporting React, including NPM, Webpack, Babel, and ES6/ES2015 Javascript syntax
 
-I plan on using the YouTube API.  
+It uses the YouTube API, Bootstrap.  
