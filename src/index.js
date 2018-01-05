@@ -1,11 +1,11 @@
 import _  from 'lodash';
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import YTSearch from 'youtube-api-search';
+import ReactDOM from 'react-dom';//imports the ReactDOM module
+import YTSearch from 'youtube-api-search';//these next 4 lines import the search bar, video detail, etc components
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
-const API_KEY = 'AIzaSyD8cnEFffTqzazPPy0sACG5waN_FsJnqH4';//const is an ES6 piece of syntax.  Declares a variable who's value never changes
+const API_KEY = 'AIzaSyD8cnEFffTqzazPPy0sACG5waN_FsJnqH4';//holds the YouTube API key
 
 class App extends Component {
   constructor(props){
@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   videoSearch(term) {
-    YTSearch({key: API_KEY, term: term}, (videos) => {//fat arrow is equivalent to writing function
+    YTSearch({key: API_KEY, term: term}, (videos) => {//fat arrow is equivalent to writing out the function keyword
       this.setState({
          videos: videos,
          selectedVideo: videos[0]
@@ -43,4 +43,5 @@ class App extends Component {
 }
 
 //Take this component's generated HTML and put it on the page (in DOM)
-ReactDOM.render(<App />, document.querySelector('.container'));
+ReactDOM.render(<App />, document.querySelector('.container'));//the first parameter is a Component Instance
+                                                              //the second parameter is a reference to an existing DOM node (for this application, it is the html class called container)

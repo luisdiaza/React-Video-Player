@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';//Go find the library called react installed as a dependency and assign it to the variable named React  
 
 const VideoListItem = ({video, onVideoSelect}) => {
   const imageURL = video.snippet.thumbnails.default.url;

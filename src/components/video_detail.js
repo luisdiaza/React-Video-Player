@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React from 'react';//Go find the library called react installed as a dependency and assign it to the variable named React
+                         //Essentially, it imports React as JavaScript module
 const VideoDetail = ({video}) => {
   if (!video) {
     return <div>Loading...</div>;
